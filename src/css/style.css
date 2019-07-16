@@ -258,6 +258,7 @@ button {
   letter-spacing: 1px;
   font-size: 13px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .main-block__right-card-active {
