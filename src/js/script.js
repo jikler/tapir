@@ -36,3 +36,12 @@ $(document).ready(function() {
 // Ввод только латинских букв конец
 
 // Кредитная карта конец
+
+// мобильное меню начало
+$(document).ready(function(){
+  $('.toggle-menu').click(function () {
+    $('.menu-container').toggleClass('menu-open');
+    $(this).toggleClass('active');
+  });
+});
+// мобильное меню конец
