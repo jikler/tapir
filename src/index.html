@@ -30,9 +30,9 @@
 
 				<div class="main-block__left">
 					<div class="main-block__left-logo">
-						<img src="img/logo.svg" alt="Logo">
+						<a href="/"><img src="img/logo.svg" alt="Logo"></a>
 					</div>
-					<ul class="nav">
+					<ul class="main-block__left-nav">
 						<li><a href="#">Первая ссылка</a></li>
 						<li><a href="#" class="active">Вторая ссылка</a></li>
 						<li><a href="#">Третья ссылка</a></li>
@@ -40,13 +40,13 @@
 					</ul>
 				</div>
 
-				<div class="main-block__right">
+				<form action="#" class="main-block__right">
 					<h1 class="section-title">Заголовок страницы</h1>
 					<div class="main-block__right-descr">
 						Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
 					</div>
 
-					<div class="main-block__right-info">Информация об оплате</div>
+					<div class="main-block__right-title">Информация об оплате</div>
 
 					<div class="main-block__right-check">
 						<div class="main-block__right-check-text">Номер счета:</div>
@@ -60,7 +60,7 @@
 
 					<div class="main-block__right-card">
 
-						<div class="main-block__right-card-text">Номер карты</div>
+						<div class="main-block__right-title">Номер карты</div>
 
 						<div class="main-block__right-card-inputs">
 							<input type="text" placeholder="7419" name="quantity" onkeyup="testJump(this);" minlength='4' maxlength='4' required="" placeholder=" " />
@@ -69,40 +69,50 @@
        <input type="text" placeholder="5910" name="quantity" onkeyup="testJump(this);" minlength='4' maxlength='4' required="" placeholder=" " />
 						</div>
 
-						<div class="main-block__right-card-text">Держатель карты</div>
-						<input type="text" name="en" placeholder="IVANOV IVAN" minlength='4' required="">
+						<div class="main-block__right-card-name">
+							<div class="main-block__right-title">Держатель карты</div>
+							<input type="text" name="en" placeholder="IVANOV IVAN" minlength='4' required="">
+						</div>
 
-					<div class="main-block__right-card-block">
-						<div class="main-block__right-card-select">
-							<div class="main-block__right-card-text">Срок действия</div>
-							<select class='drp-expiration-month'>
-   	    <option value="01">01</option>
-   	    <option value="02">03</option>
-   	    <option value="03">03</option>
-   	    <option value="04">04</option>
-   	    <option value="05">05</option>
-   	    <option value="06">06</option>
-   	    <option value="07">07</option>
-   	    <option value="08">08</option>
-   	    <option value="09">09</option>
-   	    <option value="10">10</option>
-   	    <option value="11">11</option>
-   	    <option value="12">12</option>
-	   	  </select>
+					<div class="main-block__right-card-active">
+						<div class="main-block__right-card-active-select">
+							<div class="main-block__right-title">Срок действия</div>
 
-						<select class='drp-expiration-year'>
-  	    <option value="15">2018</option>
-  	    <option value="16">2019</option>
-  	    <option value="17">2020</option>
-  	    <option value="18">2021</option>
-  	    <option value="19">2022</option>
-  	    <option value="20">2023</option>
-	  	  </select>
+								<div class="main-block__right-card-active-flex">
+									<div class="card-expiration">
+										<select class='expiration-month'>
+			   	    <option value="01">01</option>
+			   	    <option value="02">03</option>
+			   	    <option value="03">03</option>
+			   	    <option value="04">04</option>
+			   	    <option value="05">05</option>
+			   	    <option value="06">06</option>
+			   	    <option value="07">07</option>
+			   	    <option value="08">08</option>
+			   	    <option value="09">09</option>
+			   	    <option value="10">10</option>
+			   	    <option value="11">11</option>
+			   	    <option value="12">12</option>
+			   	  </select>
+								</div>
+
+								<div class="card-expiration">
+									<select class='expiration-year'>
+			  	    <option value="15">2018</option>
+			  	    <option value="16">2019</option>
+			  	    <option value="17">2020</option>
+			  	    <option value="18">2021</option>
+			  	    <option value="19">2022</option>
+			  	    <option value="20">2023</option>
+			  	  </select>
+							</div>
+						</div>
+
 					</div>
 
 					<div class="main-block__right-card-cvv">
-						<div class="main-block__right-card-text">CVV</div>
-						<input id="cvv" type="text" class="tbx-ccv" name="quantity" minlength='3'  maxlength='3' placeholder=" " required="" title="Введите 3-х значный код на обратной стороне карты">
+						<div class="main-block__right-title">CVV</div>
+						<input id="cvv" type="text" class="tbx-ccv" name="quantity" minlength='3'  maxlength='3' placeholder="253" required="" title="Введите 3-х значный код на обратной стороне карты">
 					</div>
 
 					</div>
@@ -110,9 +120,9 @@
 					</div>
 
 					<div class="main-block__right-button">
-						<button class="button">Оплатить</button>
+						<button class="button button-pay">Оплатить</button>
 					</div>
-				</div>
+				</form>
 
 			</div>
 		</div>
